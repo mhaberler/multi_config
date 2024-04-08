@@ -1,6 +1,4 @@
-# In this example, the default build (obtained with 'idf.py build')
-# targets a hypothetical development platform.
+# This file was generated using idf.py save-defconfig. It can be edited manually.
+# Espressif IoT Development Framework (ESP-IDF) 5.2.1 Project Minimal Configuration
+#
 CONFIG_EXAMPLE_PRODUCT_NAME="Blinky Development Board"
-
-# This selects 'func_dev.c' file to be compiled and linked, see CMakeLists.txt.
-CONFIG_EXAMPLE_FUNC_IMPL_DEV=y

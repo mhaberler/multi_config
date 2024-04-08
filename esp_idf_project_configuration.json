@@ -1,0 +1,56 @@
+{
+  "prod1-c3": {
+    "build": {
+      "compileArgs": [],
+      "ninjaArgs": [],
+      "buildDirectoryPath": "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/build_prod1-c3",
+      "sdkconfigDefaults": [
+        "sdkconfig.prod_common",
+        "sdkconfig.prod1-c3"
+      ],
+      "sdkconfigFilePath": "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/build_prod1-c3/sdkconfig"
+    },
+    "env": {},
+    "flashBaudRate": "",
+    "idfTarget": "esp32c3",
+    "monitorBaudRate": "",
+    "openOCD": {
+      "debugLevel": 0,
+      "configs": [],
+      "args": []
+    },
+    "tasks": {
+      "preBuild": "",
+      "preFlash": "",
+      "postBuild": "",
+      "postFlash": ""
+    }
+  },
+  "prod2-s3": {
+    "build": {
+      "compileArgs": [],
+      "ninjaArgs": [],
+      "buildDirectoryPath": "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/build_prod2-s3",
+      "sdkconfigDefaults": [
+        "sdkconfig.prod_common",
+        "sdkconfig.prod2-s3"
+      ],
+      "sdkconfigFilePath": "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/build_prod2-s3/sdkconfig"
+    },
+    "env": {},
+    "flashBaudRate": "",
+    "idfTarget": "esp32s3",
+    "monitorBaudRate": "",
+    "openOCD": {
+      "debugLevel": 0,
+      "configs": [],
+      "args": []
+    },
+    "tasks": {
+      "preBuild": "",
+      "preFlash": "",
+      "postBuild": "",
+      "postFlash": ""
+    }
+  }
+}
