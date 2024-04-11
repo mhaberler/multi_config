@@ -1,22 +1,26 @@
 {
-  "prod1-c3": {
+  "development": {
     "build": {
       "compileArgs": [],
       "ninjaArgs": [],
-      "buildDirectoryPath": "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/build_prod1-c3",
+      "buildDirectoryPath": "${workspaceFolder}/build_dev",
       "sdkconfigDefaults": [
-        "sdkconfig.prod_common",
-        "sdkconfig.prod1-c3"
+        "sdkconfig.defaults"
       ],
-      "sdkconfigFilePath": "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/build_prod1-c3/sdkconfig"
+      "sdkconfigFilePath": "${workspaceFolder}/build/sdkconfig"
     },
-    "env": {},
+    "env": {
+      "OPENOCD_SCRIPTS": "/Users/mah/.espressif/tools/openocd-esp32/v0.12.0-esp32-20230921/openocd-esp32/share/openocd/scripts",
+      "ESP_ROM_ELF_DIR": "/Users/mah/.espressif/tools/esp-rom-elfs/20230320/"
+    },
     "flashBaudRate": "",
     "idfTarget": "esp32c3",
     "monitorBaudRate": "",
     "openOCD": {
-      "debugLevel": 0,
-      "configs": [],
+      "debugLevel": 4,
+      "configs": [
+        "board/esp32c3-builtin.cfg"
+      ],
       "args": []
     },
     "tasks": {
@@ -26,24 +30,55 @@
       "postFlash": ""
     }
   },
-  "prod2-s3": {
+  "prod1": {
     "build": {
       "compileArgs": [],
       "ninjaArgs": [],
-      "buildDirectoryPath": "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/build_prod2-s3",
+      "buildDirectoryPath": "${workspaceFolder}/build_prod1",
       "sdkconfigDefaults": [
         "sdkconfig.prod_common",
-        "sdkconfig.prod2-s3"
+        "sdkconfig.prod1"
       ],
-      "sdkconfigFilePath": "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/build_prod2-s3/sdkconfig"
+      "sdkconfigFilePath": "${workspaceFolder}/build_prod1/sdkconfig"
+    },
+    "env": {},
+    "flashBaudRate": "",
+    "idfTarget": "esp32c3",
+    "monitorBaudRate": "",
+    "openOCD": {
+      "debugLevel": 0,
+      "configs": [
+        "board/esp32c3-builtin.cfg"
+      ],
+      "args": []
+    },
+    "tasks": {
+      "preBuild": "",
+      "preFlash": "",
+      "postBuild": "",
+      "postFlash": ""
+    }
+  },
+  "prod2": {
+    "build": {
+      "compileArgs": [],
+      "ninjaArgs": [],
+      "buildDirectoryPath": "${workspaceFolder}/build_prod2",
+      "sdkconfigDefaults": [
+        "sdkconfig.prod_common",
+        "sdkconfig.prod2"
+      ],
+      "sdkconfigFilePath": "${workspaceFolder}/build_prod2/sdkconfig"
     },
     "env": {},
     "flashBaudRate": "",
     "idfTarget": "esp32s3",
     "monitorBaudRate": "",
     "openOCD": {
-      "debugLevel": 0,
-      "configs": [],
+      "debugLevel": 2,
+      "configs": [
+        "board/esp32s3-builtin.cfg"
+      ],
       "args": []
     },
     "tasks": {

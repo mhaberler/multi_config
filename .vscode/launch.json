@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "gdbtarget",
+      "request": "attach",
+      "name": "Eclipse CDT Remote",
+      "initCommands": [
+        "set remote hardware-watchpoint-limit 2",
+        "mon reset halt",
+        "maintenance flush register-cache",
+        "thb app_main",
+      ],
+      "target": {
+        "port": "3333"
+      },
+    },
+    {
+      "type": "gdb",
+      "request": "attach",
+      "name": "NativeDebug default-c3",
+      "target": "extended-remote :3333",
+      "executable": "${workspaceFolder}/build/${command:espIdf.getProjectName}.elf",
+      "gdbpath": "${command:espIdf.getXtensaGdb}",
+      "cwd": "${workspaceRoot}",
+      "autorun": [
+        "set remote hardware-watchpoint-limit 2",
+        "mon reset halt",
+        "maintenance flush register-cache",
+        "thb app_main"
+      ]
+    }
+  ]
+}
