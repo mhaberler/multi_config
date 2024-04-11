@@ -1,5 +1,5 @@
 {
-    "idf.adapterTargetName": "esp32s3",
+    "idf.adapterTargetName": "esp32c3",
     "idf.espIdfPath": "/Users/mah/esp/v5.2.1-git",
     "idf.pythonBinPath": "/Users/mah/.espressif/python_env/idf5.2_py3.12_env/bin/python",
     "idf.toolsPath": "/Users/mah/.espressif",

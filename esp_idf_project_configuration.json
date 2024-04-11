@@ -72,12 +72,12 @@
     },
     "env": {},
     "flashBaudRate": "",
-    "idfTarget": "esp32s3",
+    "idfTarget": "esp32c3",
     "monitorBaudRate": "",
     "openOCD": {
       "debugLevel": 2,
       "configs": [
-        "board/esp32s3-builtin.cfg"
+        "board/esp32c3-builtin.cfg"
       ],
       "args": []
     },
