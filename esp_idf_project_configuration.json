@@ -7,7 +7,7 @@
       "sdkconfigDefaults": [
         "sdkconfig.defaults"
       ],
-      "sdkconfigFilePath": "${workspaceFolder}/build/sdkconfig"
+      "sdkconfigFilePath": "${workspaceFolder}/build_dev/sdkconfig"
     },
     "env": {
       "OPENOCD_SCRIPTS": "/Users/mah/.espressif/tools/openocd-esp32/v0.12.0-esp32-20230921/openocd-esp32/share/openocd/scripts",
@@ -17,9 +17,10 @@
     "idfTarget": "esp32c3",
     "monitorBaudRate": "",
     "openOCD": {
-      "debugLevel": 4,
+      "debugLevel": 0,
       "configs": [
-        "board/esp32c3-builtin.cfg"
+        "board/esp32c3-builtin.cfg",
+        "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/openocd/esp32c3-custom.cfg"
       ],
       "args": []
     },
@@ -41,14 +42,18 @@
       ],
       "sdkconfigFilePath": "${workspaceFolder}/build_prod1/sdkconfig"
     },
-    "env": {},
+    "env": {
+      "OPENOCD_SCRIPTS": "/Users/mah/.espressif/tools/openocd-esp32/v0.12.0-esp32-20230921/openocd-esp32/share/openocd/scripts",
+      "ESP_ROM_ELF_DIR": "/Users/mah/.espressif/tools/esp-rom-elfs/20230320/"
+    },
     "flashBaudRate": "",
     "idfTarget": "esp32c3",
     "monitorBaudRate": "",
     "openOCD": {
       "debugLevel": 0,
       "configs": [
-        "board/esp32c3-builtin.cfg"
+        "board/esp32c3-builtin.cfg",
+        "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/openocd/esp32c3-custom.cfg"
       ],
       "args": []
     },
@@ -70,14 +75,18 @@
       ],
       "sdkconfigFilePath": "${workspaceFolder}/build_prod2/sdkconfig"
     },
-    "env": {},
+    "env": {
+      "OPENOCD_SCRIPTS": "/Users/mah/.espressif/tools/openocd-esp32/v0.12.0-esp32-20230921/openocd-esp32/share/openocd/scripts",
+      "ESP_ROM_ELF_DIR": "/Users/mah/.espressif/tools/esp-rom-elfs/20230320/"
+    },
     "flashBaudRate": "",
     "idfTarget": "esp32c3",
     "monitorBaudRate": "",
     "openOCD": {
-      "debugLevel": 2,
+      "debugLevel": 0,
       "configs": [
-        "board/esp32c3-builtin.cfg"
+        "board/esp32c3-builtin.cfg",
+        "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/openocd/esp32c3-custom.cfg"
       ],
       "args": []
     },

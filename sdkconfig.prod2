@@ -1,4 +1,4 @@
 # This build configuration is for a specific product:
 CONFIG_EXAMPLE_PRODUCT_NAME="Blinky Smart Switch prod2-c3"
 CONFIG_IDF_TARGET="esp32c3"
-CONFIG_ESPTOOLPY_FLASHSIZE_8MB=y
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y

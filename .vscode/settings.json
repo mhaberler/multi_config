@@ -11,7 +11,9 @@
     "idf.gitPath": "/opt/homebrew/bin/git",
     "idf.port": "/dev/cu.usbmodem114101",
     "idf.openOcdConfigs": [
-        "board/esp32c3-builtin.cfg"
+        "board/esp32c3-builtin.cfg",
+        "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/openocd/esp32c3-custom.cfg"
+
     ],
     "idf.flashType": "UART"
 }
