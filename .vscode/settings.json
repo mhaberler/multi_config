@@ -1,5 +1,5 @@
 {
-    "idf.adapterTargetName": "esp32c3",
+    // "idf.adapterTargetName": "esp32s3",
     "idf.espIdfPath": "/Users/mah/esp/v5.2.1-git",
     "idf.pythonBinPath": "/Users/mah/.espressif/python_env/idf5.2_py3.12_env/bin/python",
     "idf.toolsPath": "/Users/mah/.espressif",
@@ -9,11 +9,10 @@
         "ESP_ROM_ELF_DIR": "/Users/mah/.espressif/tools/esp-rom-elfs/20230320/"
     },
     "idf.gitPath": "/opt/homebrew/bin/git",
-    "idf.port": "/dev/cu.usbmodem114101",
+    "idf.port": "/dev/cu.usbmodem2131101",
     "idf.openOcdConfigs": [
-        "board/esp32c3-builtin.cfg",
-        "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/openocd/esp32c3-custom.cfg"
-
+        "board/esp32s3-builtin.cfg"
     ],
-    "idf.flashType": "UART"
+    "idf.flashType": "UART",
+    "idf.adapterTargetName": "esp32s3"
 }

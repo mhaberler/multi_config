@@ -80,12 +80,12 @@
       "ESP_ROM_ELF_DIR": "/Users/mah/.espressif/tools/esp-rom-elfs/20230320/"
     },
     "flashBaudRate": "",
-    "idfTarget": "esp32c3",
+    "idfTarget": "esp32s3",
     "monitorBaudRate": "",
     "openOCD": {
       "debugLevel": 0,
       "configs": [
-        "board/esp32c3-builtin.cfg",
+        "board/esp32s3-builtin.cfg",
         "/Users/mah/Ballon/src/BalloonWare/idf/esp-led-blink/multi_config/openocd/esp32c3-custom.cfg"
       ],
       "args": []
